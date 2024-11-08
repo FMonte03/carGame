@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(118, 189, 159);
+  }
+  
+  /* html, body {
+    height: 100%;
+    margin: 0;
+  } */
+  body {
+    overflow: hidden;
+  
+  }
+  
+  .container {
+    background-color: rgb(145, 144, 144);
+    background-size: cover;
+    min-height: 99%;
+  }
+  
+  .road {
+    background-color: black;
+    height: 93vh;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    border-left: 5px white dashed;
+    border-right: 5px white dashed;
+    z-index: 1;
+  }
+  
+  .lines {
+    background-color: rgb(255, 251, 3);
+    height: 50px;
+    width: 10px;
+    position: absolute;
+    margin-left: 195px;
+    z-index: -1;
+  }
+  
+  .car {
+    height: 75px;
+    width: 41px;
+    position: absolute;
+    filter: hue-rotate(180deg);
+    background-color: rgb(0, 0, 0);
+    background-image: url("https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/projects/car-game/assets/car.png?raw=true");
+    background-size: cover;
+    bottom: 120px;
+    background-position-x: center;
+    z-index: -1;
+  }
+  
+  .enemies {
+    height: 90px;
+    width: 41px;
+    position: absolute;
+    filter: hue-rotate(90deg);
+    background-color: rgb(0, 0, 0);
+    background-image: url("https://github.com/swapnilsparsh/30DaysOfJavaScript/blob/master/projects/car-game/assets/enemycar.png?raw=true");
+    -webkit-transform: scaleY(-1);
+    background-size: cover;
+    bottom: 120px;
+    background-position-x: center;
+    z-index: -1;
+  }
+  
+  .btn {
+    background-color: rgb(33, 20, 220);
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: auto;
+  }
+  
+  .push {
+    height: 50px;
+    width: 401px;
+    margin: auto;
+    border: 5px solid rgb(33, 20, 220);
+  }
